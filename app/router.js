@@ -7,6 +7,18 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('orgs');
+
+  this.route('org', function() {
+    this.route('emberjs', function() {
+      this.route('repos');
+      this.route('ember.js', function() {
+        this.route('issues');
+        this.route('contributors');
+      });
+    });
+  });
 });
 
 export default Router;
