@@ -1,1 +1,20 @@
+<<<<<<< d99a3f8558b315feb4b4af04d524e76a6c0a2158
 @import "bourbon";
+=======
+@import 'bourbon';
+
+.repo-nav {
+	list-style: none;
+	li {
+		display: inline-block;
+		a {
+			font-weight: thin;
+			text-decoration: none
+		}
+		a.active {
+			font-weight: bolder;
+			text-decoration: underline;
+		}
+	}
+}
+>>>>>>> set up basic router with templates

@@ -7,6 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+<<<<<<< d99a3f8558b315feb4b4af04d524e76a6c0a2158
   this.route('home');
   this.route('orgs');
 
@@ -17,6 +18,14 @@ Router.map(function() {
         this.route('issues');
         this.route('contributors');
       });
+=======
+  this.route('orgs', {}); // /orgs
+  this.route('org', {path: 'org/:id'}, function() { 
+    this.route('repos', {});
+    this.route('repo', {path: ':id'}, function() {
+      this.route('contributors');
+      this.route('issues');
+>>>>>>> set up basic router with templates
     });
   });
 });
